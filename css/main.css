@@ -1,0 +1,123 @@
+/* Color Themes - Variables */
+/* Common Colors - Variables */
+/* Mixins */
+body {
+  background-color: #554971;
+  margin: 0;
+  box-sizing: border-box; }
+
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  text-align: center; }
+  @media screen and (max-width: 767px) {
+    header {
+      width: 100%;
+      flex-direction: column; } }
+  header img {
+    width: responsiveWidth(200, 300);
+    max-width: 300px;
+    height: auto; }
+  header.header--full {
+    width: 100%; }
+    header.header--full img {
+      margin-left: responsiveWidth(30, 1280); }
+
+/* Button Global */
+.btn {
+  display: inline-block;
+  margin: 1rem;
+  padding: .938em 1.875em;
+  border: .094em solid;
+  border-radius: .625em;
+  box-shadow: 0 0.375em 0.313em -0.313em rgba(0, 0, 0, 0.8), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em rgba(0, 0, 0, 0.15);
+  color: #FFF;
+  font: bold 1rem sans-serif;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  outline: none;
+  cursor: pointer; }
+
+/* Themes */
+.purple__btn {
+  border-color: black;
+  background-color: #36213E;
+  color: black; }
+  .purple__btn:hover {
+    background-color: #25162a;
+    box-shadow: 0 0.125em rgba(255, 255, 255, 0.4), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em #3c2545; }
+  .purple__btn:active {
+    box-shadow: 0 0.063em rgba(255, 255, 255, 0.4), inset 0 0 1.094em black, inset 0 0.063em black, inset 0 -0.188em black; }
+
+.light-purple__btn {
+  border-color: #262133;
+  background-color: #554971;
+  color: black; }
+  .light-purple__btn:hover {
+    background-color: #473d5e;
+    box-shadow: 0 0.125em rgba(255, 255, 255, 0.4), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em #5a4d77; }
+  .light-purple__btn:active {
+    box-shadow: 0 0.063em rgba(255, 255, 255, 0.4), inset 0 0 1.094em black, inset 0 0.063em #262133, inset 0 -0.188em #262133; }
+
+.dark-blue__btn {
+  border-color: #394451;
+  background-color: #63768D;
+  color: black; }
+  .dark-blue__btn:hover {
+    background-color: #56677b;
+    box-shadow: 0 0.125em rgba(255, 255, 255, 0.4), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em #677b93; }
+  .dark-blue__btn:active {
+    box-shadow: 0 0.063em rgba(255, 255, 255, 0.4), inset 0 0 1.094em #0f1215, inset 0 0.063em #394451, inset 0 -0.188em #394451; }
+
+.med-blue__btn {
+  border-color: #469fae;
+  background-color: #8AC6D0;
+  color: #1a3b41; }
+  .med-blue__btn:hover {
+    background-color: #74bbc7;
+    box-shadow: 0 0.125em rgba(255, 255, 255, 0.4), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em #91cad3; }
+  .med-blue__btn:active {
+    box-shadow: 0 0.063em rgba(255, 255, 255, 0.4), inset 0 0 1.094em #295d65, inset 0 0.063em #469fae, inset 0 -0.188em #469fae; }
+
+.light-blue__btn {
+  border-color: #52e2ff;
+  background-color: #B8F3FF;
+  color: #0099b8; }
+  .light-blue__btn:hover {
+    background-color: #99eeff;
+    box-shadow: 0 0.125em rgba(255, 255, 255, 0.4), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em #c2f5ff; }
+  .light-blue__btn:active {
+    box-shadow: 0 0.063em rgba(255, 255, 255, 0.4), inset 0 0 1.094em #00c3eb, inset 0 0.063em #52e2ff, inset 0 -0.188em #52e2ff; }
+
+.purple__btn {
+  border-color: black;
+  background-color: #36213E;
+  color: black; }
+  .purple__btn:hover {
+    background-color: #25162a;
+    box-shadow: 0 0.125em rgba(255, 255, 255, 0.4), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em #3c2545; }
+  .purple__btn:active {
+    box-shadow: 0 0.063em rgba(255, 255, 255, 0.4), inset 0 0 1.094em black, inset 0 0.063em black, inset 0 -0.188em black; }
+
+.light-purple__header {
+  background-color: #554971; }
+
+.dark-blue__header {
+  background-color: #63768D; }
+
+.med-blue__header {
+  background-color: #8AC6D0; }
+
+.med-blue__header {
+  background-color: #8AC6D0; }
+
+/*# sourceMappingURL=main.css.map */
