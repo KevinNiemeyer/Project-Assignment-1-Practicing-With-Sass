@@ -2,36 +2,30 @@ header {
   position: absolute;
   left:0;
   top:0;
-  width:50%;
+  width:100%;
   z-index:1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 10px;
+  opacity: .90;
+  padding-top: 10px;
   text-align:center;
   
-
-  @media screen and (max-width: 767px) {
-    width:100%;
-    flex-direction: column;
-  }
-
   img {
     width:responsiveWidth(200,300);
     max-width:300px;
     height:auto;
+    margin-left:responsiveWidth(30,1280);
   }
   
-  &.header--full{
-    width:100%;
-
-    img {
+  p {
       
-      margin-left:responsiveWidth(30,1280);
-    }
-
-    button {
-      
-    }
+    font-size: 7vmin;
+        
+    //font-size: 4em;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 870px) {
+    position: relative;
   }
 }

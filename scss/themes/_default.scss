@@ -1,5 +1,6 @@
 /* Themes */
 
+//theme includes
 .purple__btn{
   @include btn-theme($purple);
 }
@@ -22,17 +23,47 @@
 }
 
 .light-purple__header{
-  @include header-theme($light-purple);
+  @include header-theme($light-purple, $purple);
 }
 
 .dark-blue__header{
-  @include header-theme($dark-blue);
+  @include header-theme($dark-blue, $light-blue);
 }
 
 .med-blue__header{
-  @include header-theme($med-blue);
+  @include header-theme($med-blue, $light-blue);
 }
 
-.med-blue__header{
-  @include header-theme($med-blue);
+.light-blue__header{
+  @include header-theme($light-blue, $dark-blue);
+}
+
+.header__transparent {
+  @include header-theme($transparent, $light-purple);
+}
+
+//section includes
+.panel-default {
+  @include panel-theme($light-purple, $purple);
+}
+
+.panel-light-blue {
+  @include panel-theme($light-blue, $dark-blue);
+}
+
+.panel-dark-blue {
+  @include panel-theme($dark-blue, $light-blue);
+}
+
+.section-panel-animate {
+  @include section-theme($light-blue);
+}
+
+//pages includes
+.pages__header {
+  @include pages-header-theme($light-blue);
+}
+
+.pages__content {
+  @include pages-content-theme($light-blue);
 }

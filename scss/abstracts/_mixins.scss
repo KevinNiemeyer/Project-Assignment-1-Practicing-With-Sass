@@ -3,8 +3,9 @@
 @mixin btn-theme($btn-color) {
   border-color: darken($btn-color, 20%);
   background-color: $btn-color;
-  color: darken($btn-color, 50%);
+  color: darken($btn-color, 25%);
   &:hover {
+    color: lighten($btn-color, 50%);
     background-color: darken($btn-color, 6%);
     box-shadow: 0 .125em $off-wht, inset 0 .063em $off-wht, inset 0 -.188em lighten($btn-color, 2%);
   }
@@ -20,6 +21,51 @@
   transition: $val; 
 }
 
-@mixin header-theme($header-color) {
-  background-color: $header-color;
+@mixin header-theme($header__background-color, $header__text-color) {
+  background-color: $header__background-color;
+  color: lighten($header__text-color, 25%);
+  text-shadow: $light-purple 0.1em 0.1em 0.2em;
 }
+
+@mixin panel-theme($main__tag--color, $text-color) {
+    .main-tag {
+      background-color: $main__tag--color;
+      color: $text-color;
+    }
+}
+
+@mixin section-theme($panel-text-color) {
+  &:hover {
+    .panel {
+      margin-top: 30px;
+      opacity: 1;
+      color: $panel-text-color;
+    }
+  }
+}
+
+@mixin pages-header-theme ($text-color) {
+  color: $text-color;
+  text-shadow:
+    -1px -1px 0 darken($text-color, 75%),
+    1px -1px 0 darken($text-color, 75%),
+    -1px 1px 0 darken($text-color, 75%),
+    1px 1px 0 darken($text-color, 75%);
+  text-align: left;
+  font-size: .75em;
+  padding: 10px;
+  position: absolute;
+  @media screen and (max-width: 560px) {
+      &.pages__header {
+        p {
+          font-size: 2em;
+        }
+        text-align: center;
+      }
+    }
+}
+
+@mixin pages-content-theme ($text-color) {
+  color: $text-color;
+}
+

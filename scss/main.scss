@@ -12,12 +12,24 @@
 @import 'base/base';
 @import 'base/fonts';
 @import 'base/helpers';
- 
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/login';  
+@import 'pages/contact';
+@import 'pages/astronomy';
+@import 'pages/programming';
+@import 'pages/music';
+
 @import 'layout/navigation';
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/sidebar';
+@import 'layout/container';
+@import 'layout/section';
+@import 'layout/panel';
+@import 'layout/pages__container';
 
 @import 'components/button';
 @import 'components/carousel';
@@ -27,12 +39,9 @@
 @import 'components/loader';
 @import 'components/table';
  
-@import 'pages/home';
-@import 'pages/about';
-@import 'pages/login';  
-@import 'pages/contact';
- 
 @import 'themes/dark';
 @import 'themes/light';
 @import 'themes/default';
+
+
 

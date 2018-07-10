@@ -1,0 +1,68 @@
+.panel {
+    margin-top: 300px;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    font-family: Arial;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    display: flex;
+    flex-direction: column;
+    transition: margin-top 1s, opacity 1s;
+
+
+    .main-tag {
+        width: 75%;
+        font-size: 1.5em;
+        padding: 3px;
+    }
+
+    .title {
+        padding-top: 15px;
+        font-size: 2.75em;
+        font-weight: bold;
+        color: white;
+        transform: scaleY(2.5);
+    }
+
+    p {
+        width: 75%;
+        margin-top: 50px;
+        padding-bottom: 5px;
+    }
+
+    a {
+        color: red;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    @media screen and (max-width: 870px) {
+
+        .main-tag {
+            width: 75%;
+            font-size: 1.5em;
+            align-items: flex-start;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 1.5em;
+            transform: scaleY(1.5);
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+    
+    @media screen and (max-width: 1050px) {
+     .title {
+            font-size: 2.0em;
+            transform: scaleY(1.5);
+        }
+    }
+}
